@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+  "name": "Hotels.com modifications",
+  "description": "This extension alters the look and feel of the hotels.com homepage",
+  "version": "1.0",
+  "browser_action": {
+    "default_title": "Click me!!"
+  },
+  "content_scripts": [{
+    "js": ["jquery-3.1.1.min.js", "new.js"],
+    "css": ["new.css"],
+    "matches": ["https://uk.hotels.com/"]
+    }],
+  "permissions": [
+    "activeTab"
+  ]
+}
